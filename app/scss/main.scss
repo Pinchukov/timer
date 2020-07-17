@@ -1,0 +1,73 @@
+$accent: #91ad0a;
+$text: #202020;
+$black: #000;
+$red: red;
+$orange: #ffba1e;
+$brown: #B98240;
+$grid-gutter-width: 20px;
+$gutter: $grid-gutter-width;
+
+.button {
+  background-color: rgba($accent, .9);
+	border: none;
+	padding: 10px $gutter * 2;
+	font-weight: bold;
+	cursor: pointer;
+  text-decoration: none;
+  text-transform: uppercase;
+  display: inline-block;
+  transition: all .3s;
+	color: #fff; 
+}
+.button-disabled {
+		background-color: $red !important;
+}
+.action {
+            text-align: center;
+            padding: $gutter;
+            border: 10px solid rgba(#91ad0a, .9);
+            background-color: rgba(#fff, .9);
+
+            .sale {
+                color: red;
+                background-color: #fff;
+                padding: $gutter / 6 $gutter;
+                font-size: 3rem;
+            }
+            p {
+                font-weight: bold;
+                line-height: .5;
+            }
+            .timer {
+                background-color: #fff;
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                margin-top: $gutter;
+                margin-bottom: $gutter; 
+                border: 1px solid $accent;
+                div {
+                    font-size: 1.8rem;
+                    //line-height: 1.1;
+                    &:nth-child(1){
+                        border-right: 1px solid $accent;
+                    }
+                    &:nth-child(2){}
+                    &:nth-child(3){
+                        border-left: 1px solid $accent;
+                    }
+                    span {
+                        display: block;
+                        font-size: 1rem;
+                        margin-top: -5px;
+                        padding-bottom: 5px;
+                    }
+                }
+
+            }
+
+            button {
+                padding-right: $gutter / 2;
+                padding-left: $gutter / 2;
+                width: 100%;
+            }
+        }
